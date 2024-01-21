@@ -6,7 +6,7 @@
 
 Срок выполнения задания:
 
-**до 26.03.23** ![Relative date](https://img.shields.io/date/1679864400)
+<!-- **до 26.03.23** ![Relative date](https://img.shields.io/date/1679864400) -->
 
 ## Lab 03. Моделирование автомата горячих напитков
 
