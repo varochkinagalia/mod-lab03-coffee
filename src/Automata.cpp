@@ -41,22 +41,8 @@ void Automata::getMenu() {
     prices[4] = 55;
     std::cout << "Menu c cenami cchitano" << std::endl;
 }
-void Automata::getState() {
-    if (state == 0) {
-        std::cout << "State: " << "off";
-    }
-    if (state == 1) {
-        std::cout << "State: " << "wait";
-    }
-    if (state == 2) {
-        std::cout << "State: " << "accept";
-    }
-    if (state == 3) {
-        std::cout << "State: " << "check";
-    }
-    if (state == 4) {
-        std::cout << "State: " << "cook";
-    }
+STATES Automata::Automata::getState() {
+    return state;
 }
 void Automata::choice(int drink) {
     if (drink >= 0 && drink < menu_size) {
