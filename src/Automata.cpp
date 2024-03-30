@@ -61,12 +61,12 @@ void Automata::check() {
         if (cash > prices[nomer]) {
             std::cout << "Sdacha " << cash - prices[nomer];
             std::cout << ". Vozmite sdachu." << std::endl;
-	} else {
+        } else {
             std::cout << "Sdacha " << cash - prices[nomer] << std::endl;
-	}
+        }
     } else {
         state = STATES::CHECK;
-	std::cout << "Deneg ne dostatochno " <<  std::endl;
+        std::cout << "Deneg ne dostatochno " <<  std::endl;
     }
 }
 void Automata::cancel() {
