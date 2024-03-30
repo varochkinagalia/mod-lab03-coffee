@@ -3,21 +3,21 @@
 using namespace std;
 int main()
 {
-	//включили автомат
+	//РІРєР»СЋС‡РёР»Рё Р°РІС‚РѕРјР°С‚
 	Automata automat;
 	automat.on();
-
-	//ситуация, когда все работает правильно-деньги положили и то, что хотели получили
+	
+	//СЃРёС‚СѓР°С†РёСЏ, РєРѕРіРґР° РІСЃРµ СЂР°Р±РѕС‚Р°РµС‚ РїСЂР°РІРёР»СЊРЅРѕ-РґРµРЅСЊРіРё РїРѕР»РѕР¶РёР»Рё Рё С‚Рѕ, С‡С‚Рѕ С…РѕС‚РµР»Рё РїРѕР»СѓС‡РёР»Рё
 	automat.getMenu();
 	automat.choice(2);
 	automat.coin(10);
 	automat.check();
 	automat.cook();
 	automat.finish();
-
+        
 	cout << endl;
-
-	//ситуация, когда денег недостаточно
+        
+	//СЃРёС‚СѓР°С†РёСЏ, РєРѕРіРґР° РґРµРЅРµРі РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ
 	automat.getMenu();
 	automat.choice(2);
 	automat.coin(5);
@@ -26,22 +26,19 @@ int main()
 	automat.check();
 	automat.cook();
 	automat.finish();
-
+        
 	cout << endl;
-
-	//ситуация, когда заказ отменен
+	
+	//СЃРёС‚СѓР°С†РёСЏ, РєРѕРіРґР° Р·Р°РєР°Р· РѕС‚РјРµРЅРµРЅ
 	automat.getMenu();
 	automat.choice(3);
 	automat.coin(50);
 	automat.cancel();
-
+        
 	cout << endl;
 	
-
-    //выключаем автомат
+        //РІС‹РєР»СЋС‡Р°РµРј Р°РІС‚РѕРјР°С‚
 	automat.off();
-
-
 	return 0;
 	
 }
