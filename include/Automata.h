@@ -3,6 +3,11 @@
 #define INCLUDE_AUTOMATA_H_
 #include <string>
 enum STATES {OFF, WAIT, ACCEPT, CHECK, COOK};
+//OFF - 0
+//WAIT - 1
+//ACCEPT - 2
+//CHECK - 3
+//COOK 4
 class Automata {
  public:
      Automata();
