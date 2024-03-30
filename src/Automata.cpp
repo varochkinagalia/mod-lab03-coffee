@@ -47,22 +47,22 @@ STATES Automata::Automata::getState() {
 void Automata::choice(int drink) {
     if (drink >= 0 && drink < menu_size) {
         state = STATES::CHECK;
-	nomer = drink;
-	std::cout << "Vibran " << menu[nomer] << std::endl;
-	std::cout << "Cena " << menu[nomer] << " " <<   prices[nomer] << std::endl;
+        nomer = drink;
+        std::cout << "Vibran " << menu[nomer] << std::endl;
+        std::cout << "Cena " << menu[nomer] << " " <<   prices[nomer] << std::endl;
     } else {
-	std::cout << "Vibor nevernii "  << std::endl;
+        std::cout << "Vibor nevernii " << std::endl;
     }
 }
 void Automata::check() {
     if (cash >= prices[nomer]) {
-	state = STATES::CHECK;
-	std::cout << "Dengi prinyati " <<  std::endl;
-	if (cash > prices[nomer]) {
+        state = STATES::CHECK;
+        std::cout << "Dengi prinyati " <<  std::endl;
+        if (cash > prices[nomer]) {
 	    std::cout << "Sdacha " << cash - prices[nomer];
 	    std::cout << ". Vozmite sdachu." << std::endl;
 	} else {
-	    std::cout << "Sdacha " << cash - prices[nomer] << std::endl;
+            std::cout << "Sdacha " << cash - prices[nomer] << std::endl;
 	}
     } else {
         state = STATES::CHECK;
