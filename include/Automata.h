@@ -4,7 +4,7 @@
 #include <string>
 enum STATES {OFF, WAIT, ACCEPT, CHECK, COOK};
 class Automata {
-    public:
+	public:
         Automata();
         void on();
         void off();
