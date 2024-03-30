@@ -51,7 +51,7 @@ TEST(AutomataTest, Check) {
 TEST(AutomataTest, Cooking) {
     Automata automata;
     automata.on();
-    automata.coin(10);
+    automata.coin(100);
     automata.choice(2);
     automata.check();
     automata.cook();
@@ -60,7 +60,7 @@ TEST(AutomataTest, Cooking) {
 TEST(AutomataTest, CookingWithFinish) {
     Automata automata;
     automata.on();
-    automata.coin(10);
+    automata.coin(100);
     automata.choice(2);
     automata.check();
     automata.cook();
@@ -70,7 +70,7 @@ TEST(AutomataTest, CookingWithFinish) {
 TEST(AutomataTest, Off) {
     Automata automata;
     automata.on();
-    automata.coin(10);
+    automata.coin(100);
     automata.choice(2);
     automata.check();
     automata.cook();
