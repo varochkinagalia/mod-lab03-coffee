@@ -1,7 +1,6 @@
 // Copyright 2022 UNN-IASR
 #include "Automata.h"
 #include <iostream>
-
 Automata::Automata() {
     cash = 0;
     nomer = 0;
