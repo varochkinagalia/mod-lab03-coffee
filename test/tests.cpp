@@ -15,7 +15,7 @@ TEST(AutomataTest, InsertCoin) {
     EXPECT_EQ(automata.getState(), "accept");
 }
 
-TEST(AutomataTest, InsertCoin) {
+TEST(AutomataTest, InsertCoin1) {
     Automata automata;
     automata.on();
     automata.coin(3);
@@ -62,7 +62,7 @@ TEST(AutomataTest, Cooking) {
     automata.on();
     automata.coin(5);
     automata.choice(2);
-    automata.cook(2);
+    automata.cook();
     EXPECT_EQ(automata.getState(), "cook");
 }
 
@@ -71,7 +71,7 @@ TEST(AutomataTest, CookingWithFinish) {
     automata.on();
     automata.coin(5);
     automata.choice(2);
-    automata.cook(2);
+    automata.cook();
     automata.finish();
     EXPECT_EQ(automata.getState(), "wait");
 }
@@ -81,7 +81,7 @@ TEST(AutomataTest, Off) {
     automata.on();
     automata.coin(5);
     automata.choice(2);
-    automata.cook(2);
+    automata.cook();
     automata.finish();
     automata.off();
     EXPECT_EQ(automata.getState(), "off");
