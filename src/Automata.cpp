@@ -59,10 +59,10 @@ void Automata::check() {
 	state = STATES::CHECK;
 	std::cout << "Dengi prinyati " <<  std::endl;
 	if (cash > prices[nomer]) {
-		std::cout << "Sdacha " << cash - prices[nomer];
-		std::cout << ". Vozmite sdachu." << std::endl;
+	    std::cout << "Sdacha " << cash - prices[nomer];
+	    std::cout << ". Vozmite sdachu." << std::endl;
 	} else {
-		std::cout << "Sdacha " << cash - prices[nomer] << std::endl;
+	    std::cout << "Sdacha " << cash - prices[nomer] << std::endl;
 	}
     } else {
         state = STATES::CHECK;
