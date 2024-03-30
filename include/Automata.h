@@ -2,7 +2,7 @@
 #ifndef INCLUDE_AUTOMATA_H_
 #define INCLUDE_AUTOMATA_H_
 #include <string>
-enum class STATES {OFF, WAIT, ACCEPT, CHECK, COOK};
+enum STATES {OFF, WAIT, ACCEPT, CHECK, COOK};
 class Automata {
 public:
 	Automata();
