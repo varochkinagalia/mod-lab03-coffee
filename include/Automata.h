@@ -1,27 +1,27 @@
+// Copyright 2022 UNN-IASR
 #ifndef INCLUDE_AUTOMATA_H_
 #define INCLUDE_AUTOMATA_H_
 #include <string>
 enum STATES {OFF, WAIT, ACCEPT, CHECK, COOK};
-class Automata
-{
+class Automata {
 public:
 Automata();
-void on();
-void off();
-void coin(int amount);
-void getMenu();
-void getState();
-void choice(int drink);
-void check();
-void cancel();
-void cook();
-void finish();
+  void on();
+  void off();
+  void coin(int amount);
+  void getMenu();
+  void getState();
+  void choice(int drink);
+  void check();
+  void cancel();
+  void cook();
+  void finish();
 private:
-int cash;
-static const int menu_size = 5;
-int nomer;
-std::string menu[menu_size];
-float prices[menu_size];
-STATES state;
+  int cash;
+  int menu_size = 5;
+  int nomer;
+  std::string menu[5];
+  int prices[5];
+  STATES state;
 };
-#endif
+"#endif // INCLUDE_AUTOMATA_H_"
