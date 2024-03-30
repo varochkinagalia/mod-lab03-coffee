@@ -49,7 +49,8 @@ void Automata::choice(int drink) {
         state = STATES::CHECK;
         nomer = drink;
         std::cout << "Vibran " << menu[nomer] << std::endl;
-        std::cout << "Cena " << menu[nomer] << " " <<   prices[nomer] << std::endl;
+        std::cout << "Cena " << menu[nomer] << " " ;
+	std::cout <<   prices[nomer] << std::endl;
     } else {
         std::cout << "Vibor nevernii " << std::endl;
     }
@@ -59,8 +60,8 @@ void Automata::check() {
         state = STATES::CHECK;
         std::cout << "Dengi prinyati " <<  std::endl;
         if (cash > prices[nomer]) {
-	    std::cout << "Sdacha " << cash - prices[nomer];
-	    std::cout << ". Vozmite sdachu." << std::endl;
+            std::cout << "Sdacha " << cash - prices[nomer];
+            std::cout << ". Vozmite sdachu." << std::endl;
 	} else {
             std::cout << "Sdacha " << cash - prices[nomer] << std::endl;
 	}
@@ -83,7 +84,7 @@ void Automata::cook() {
 void Automata::finish() {
     if (cash >= prices[nomer]) {
         cash -= prices[nomer];
-	state = STATES::WAIT;
-	std::cout << "Zakaz gotov " << std::endl;
+        state = STATES::WAIT;
+        std::cout << "Zakaz gotov " << std::endl;
     }
 }
