@@ -51,16 +51,18 @@ TEST(AutomataTest, Check) {
 TEST(AutomataTest, Cooking) {
     Automata automata;
     automata.on();
-    automata.coin(5);
+    automata.coin(10);
     automata.choice(2);
+    automata.check();
     automata.cook();
     EXPECT_EQ(automata.getState(), 4);
 }
 TEST(AutomataTest, CookingWithFinish) {
     Automata automata;
     automata.on();
-    automata.coin(5);
+    automata.coin(10);
     automata.choice(2);
+    automata.check();
     automata.cook();
     automata.finish();
     EXPECT_EQ(automata.getState(), 1);
@@ -68,8 +70,9 @@ TEST(AutomataTest, CookingWithFinish) {
 TEST(AutomataTest, Off) {
     Automata automata;
     automata.on();
-    automata.coin(5);
+    automata.coin(10);
     automata.choice(2);
+    automata.check();
     automata.cook();
     automata.finish();
     automata.off();
