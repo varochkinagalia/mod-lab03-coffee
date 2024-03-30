@@ -73,7 +73,7 @@ void Automata::getState()
 }
 void Automata::choice(int drink)
 {
-	//ğàçìåğ ìåíş 5 
+	//Ñ€Ğ°Ğ·Ğ¼ĞµÑ€ Ğ¼ĞµĞ½Ñ 5 
 	if (drink >= 0 && drink < menu_size)
 	{
 		state = STATES::CHECK;
