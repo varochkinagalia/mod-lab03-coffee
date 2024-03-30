@@ -49,8 +49,7 @@ void Automata::choice(int drink) {
         state = STATES::CHECK;
         nomer = drink;
         std::cout << "Vibran " << menu[nomer] << std::endl;
-        std::cout << "Cena " << menu[nomer] << " " ;
-	std::cout <<   prices[nomer] << std::endl;
+        std::cout << "Cena " << prices[nomer] << std::endl;
     } else {
         std::cout << "Vibor nevernii " << std::endl;
     }
