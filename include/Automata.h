@@ -10,7 +10,7 @@ class Automata {
      void off();
      void coin(int amount);
      void getMenu();
-     void getState();
+     STATES getState();
      void choice(int drink);
      void check();
      void cancel();
